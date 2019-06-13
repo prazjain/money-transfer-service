@@ -49,7 +49,7 @@ complication when transferring money when you are transferring from accounts tha
 
   * Unit tests
 
-  There are 35 unit test cases for the application, that test every minute detail. These unit tests isolate the object under test by mocking dependencies using Mockito.
+  	There are 35 unit test cases for the application, that test every minute detail. These unit tests isolate the object under test by mocking dependencies using Mockito.
 
   * End to End tests
 
