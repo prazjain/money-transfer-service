@@ -166,7 +166,7 @@ Scenario: Multiple money transfer between User one and User two
 
 ## Steps
 
-####<a name="create-account-prashant">Create Account Prashant</a>
+#### <a name="create-account-prashant">Create Account Prashant</a>
 
 *Request*
 
@@ -190,7 +190,7 @@ Body
 	    "version": 1
 	}
 
-####<a name="create-account-nishant">Create Account Nishant</a>
+#### <a name="create-account-nishant">Create Account Nishant</a>
 
 *Request*
 
@@ -214,7 +214,7 @@ Body
 	    "version": 1
 	}
 	
-####<a name="get-account-prashant">Get Account Prashant</a>
+#### <a name="get-account-prashant">Get Account Prashant</a>
 
 
 
@@ -234,7 +234,7 @@ GET	`http://localhost:8080/account/2`
 	}
 
 
-####<a name="get-account-nishant">Get Account Nishant</a>
+#### <a name="get-account-nishant">Get Account Nishant</a>
 
 
 *Request*
@@ -252,7 +252,7 @@ GET	`http://localhost:8080/account/4`
 	    "version": 1
 	}
 
-####<a name="get-statement-prashant">Get Statement Prashant</a>
+#### <a name="get-statement-prashant">Get Statement Prashant</a>
 
 Get statement for Prashant immediately after his account is created.
 
@@ -278,7 +278,7 @@ GET	`http://localhost:8080/account/2/statement?fromDate=31012019&toDate=04052019
 	    "balance": "1000.00"
 	}
 
-####<a name="post-transfer-from-prashant-to-nishant">Post Transfer from Prashant to Nishant's account</a>
+#### <a name="post-transfer-from-prashant-to-nishant">Post Transfer from Prashant to Nishant's account</a>
 
 This request below will transfer 500 amount from Prashant to Nishant's account.
 Please bear in mind, we need to give Prashant's account resource object's version in If-Match request header, so server can check we are requesting transfer on latest version of that resource.
@@ -312,7 +312,7 @@ Body
 
 	Transfer successful
 
-####<a name="get-account-nishant-after-transfer">Get Account Nishant After Transfer</a>
+#### <a name="get-account-nishant-after-transfer">Get Account Nishant After Transfer</a>
 
 Lets look at Nishant's account now after the transfer. Version number has gone up too.
 
@@ -331,7 +331,7 @@ GET	`http://localhost:8080/account/4`
 	    "version": 2
 	}
 
-####<a name="get-statement-prashant-after-transfer">Get Statement - Prashant After Transfer</a>
+#### <a name="get-statement-prashant-after-transfer">Get Statement - Prashant After Transfer</a>
 
 Get statement for Prashant after he has done some transactions.
 
